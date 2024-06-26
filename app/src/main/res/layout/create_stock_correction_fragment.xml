@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+       style="@style/HomeSaversTextViewCompact"
+        android:text="Home Savers"
+      />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewComponent"
+        android:text="Business Location"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/edit_stock_correction_business_location"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewComponent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewComponent"
+        android:text="Warehouse"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/edit_stock_correction_warehouse"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewComponent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_btn_stock_correction_frg_save_stock_correction"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Start Stock Correction"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

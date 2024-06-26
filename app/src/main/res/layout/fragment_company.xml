@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.ssinfomate.warehousemanagement.ui.company.CompanyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Company Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Select Company"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

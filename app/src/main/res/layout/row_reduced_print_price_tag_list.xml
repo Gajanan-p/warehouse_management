@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:elevation="4dp"
+    android:background="@drawable/row_background"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/print_reduced_barcode_product_name"
+        android:layout_width="wrap_content"
+        android:text="Product Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18sp"
+        android:id="@+id/print_reduced_barcode_barcode"
+        android:layout_width="wrap_content"
+        android:hint="456465465456"
+        android:textColor="@color/purple_200"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Old Sale Rate"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/print_reduced_barcode_old_sale_rate"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="New Sale Rate"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/print_reduced_barcode_new_sale_rate"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="No. Of Stickers"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/print_reduced_barcode_no_of_stickers"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <Button
+        android:id="@+id/button_print_reduced_barcode"
+        android:layout_width="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:text="Print"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    tools:context="com.ssinfomate.warehousemanagement.ui.stocktransfer.CreateStockTransferFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+       style="@style/HomeSaversTextViewCompact"
+        android:text="Home Savers"
+       />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewComponent"
+        android:text="Business Location"
+       />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/select_create_stock_transfer_business_location"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewComponent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewComponent"
+        android:text="From Warehouse"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/select_create_stock_transfer_from_warehouse"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewComponent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+     style="@style/TextViewComponent"
+        android:text="To Warehouse"
+       />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/select_create_stock_transfer_to_warehouse"
+        android:layout_width="match_parent"
+        android:hint="Select to warehouse"
+        style="@style/EditTextViewComponent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_create_stock_transfer_start_stock_transfer"
+        android:layout_marginTop="6dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Start Stock Transfer"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

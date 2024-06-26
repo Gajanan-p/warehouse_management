@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Warehouse Manegment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_home">Home</string>
+    <!--*************************************-->
+    <string name="menu_home">Home</string>
+    <string name="menu_login">Login</string>
+
+    <!--Stock Correction-->
+
+    <string name="menu_stock_correction">Stock Correction</string>
+    <string name="menu_create_stock_correction">Create Stock Correction</string>
+    <string name="menu_pick_held_stock_correction">Pick Held Stock Correction</string>
+    <string name="menu_save_stock_correction">Save Stock Correction</string>
+
+    <!--Stock Transfer-->
+
+    <string name="menu_stock_transfer">Stock Transfer</string>
+    <string name="menu_create_stock_transfer">Create Stock Transfer</string>
+    <string name="menu_pick_held_stock_transfer">Pick Held Stock Transfer</string>
+    <string name="menu_save_stock_transfer">Save Stock Transfer</string>
+
+    <!--GRN-->
+
+    <string name="menu_manage_grn">Manage GRN</string>
+    <string name="menu_create_grn">Create GRN</string>
+    <string name="menu_pick_held_grn">Pick Held GRN</string>
+    <string name="menu_save_grn">Save GRN</string>
+    <string name="menu_save_grn_with_pur_order">Save With Purchase Number</string>
+
+    <!--Purchase Order-->
+
+    <string name="menu_purchase_order">Purchase Order</string>
+    <string name="menu_save_purchase_order">Save Purchase Order</string>
+
+
+    <!--Check Stock-->
+    <string name="menu_check_stock">Check Stock </string>
+
+    <!--Change company-->
+    <string name="menu_change_company">Change Company </string>
+
+    <!-- Stock Transfer Notification-->
+    <string name="menu_stock_transfer_notification">Stock Transfer Notification</string>
+
+
+    <!-- Stock Transfer Notification-->
+    <string name="menu_accept_stock_transfer_list">Accept Stock Transfer List</string>
+
+
+    <!--Print Price Tag -->
+    <string name="menu_print_price_tag">Print Price Tag</string>
+
+    <!--Reduce Barcode-->
+    <string name="menu_reduce_barcode">Reduce Barcode</string>
+    <string name="menu_save_reduce_barcode">Save Reduce Barcode</string>
+    <string name="menu_general">General</string>
+
+    <!--Menu Activity-->
+    <string name="menu_setting">Setting</string>
+    <string name="menu_logout">logout</string>
+
+    <string name="setting_contact_hyperlink"><a href="http://hdpos.in/contact-us/">Contact Us</a></string>
+
+    <string name="print">Print</string>
+    <string name="print_failed">Print Failed:</string>
+    <string name="print_successful">File sent to printer</string>
+    <string name="printer_paused">Printer is paused</string>
+    <string name="head_open">Printer head is open</string>
+    <string name="paper_out">Printer paper is out</string>
+    <string name="cannot_print">Cannot send file to printer</string>
+    <string name="no_printer">Cannot connect to printer</string>
+    <string name="sent_to_printer">Printing...</string>
+    <string name="ready_to_print">Ready to Print</string>
+    <string name="no_zpl">Unable to change printer language to ZPL</string>
+    <string name="unable_to_print">Unable to Print</string>
+    <string name="print_succeeded">Print successful</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="id_stock_array">
+        <item>A</item>
+        <item>D</item>
+    </string-array>
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+
+    <string name="yes">Yes !</string>
+    <string name="no">No</string>
+</resources>

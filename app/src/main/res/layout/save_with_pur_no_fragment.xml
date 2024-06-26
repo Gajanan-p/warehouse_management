@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_margin="5dp"
+    tools:context="com.ssinfomate.warehousemanagement.ui.grn.SaveWithPurNoFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_save_GrnWithPo_list"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        tools:listitem="@layout/row_grn_with_purchase_order_list"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/save_GrnWithPo_button"
+        android:layout_width="50dp"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:drawableRight="@drawable/ic_save_24"
+        android:layout_height="50dp"/>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    tools:context="com.ssinfomate.warehousemanagement.ui.stockcorrection.StockCorrectionFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:layout_height="100dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/id_stock_fragment_create_stock_correction_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_create_stock_correction" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:text="Create Stock Correction"
+                    android:textSize="16sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:layout_height="100dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_height="100dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/id_stock_fragment_pick_held_stock_correction_img"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerInside"
+                    android:layout_weight="0.6"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_pick_held_stock_correction"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.4"
+                    android:text="Pick Held Stock Correction"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_height="0dp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/SCF_CSC_Visibility"
+            layout="@layout/create_stock_correction_fragment"
+            />
+        <include
+            android:visibility="gone"
+            android:id="@+id/SCF_PHSC_Visibility"
+            layout="@layout/pick_held_stock_correction_fragment"
+
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

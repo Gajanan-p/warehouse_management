@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context="com.ssinfomate.warehousemanagement.ui.reducedbarcode.ReduceBarcodeFragment">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+      style="@style/TextViewComponent"
+        android:layout_marginTop="30dp"
+        android:text="Business Location"
+       />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/edit_reduced_business_location"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewComponent"/>
+
+    <!--androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewComponent"
+        android:text="Price List"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/edit_reduced_barcode_reduced_price_print_report"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewComponent"/-->
+
+    <!--androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewComponent"
+        android:text="Select Price List"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/edit_reduced_barcode_select_price_list"
+        android:layout_width="match_parent"
+        android:hint="Select Price List Name"
+        style="@style/EditTextViewComponent"/-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_reduced_barcode_start_reduced_price"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="Start Print Reduced Price"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

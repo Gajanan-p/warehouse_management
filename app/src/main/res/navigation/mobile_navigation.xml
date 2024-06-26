@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_stock_transfer_notification"
+        android:name="com.ssinfomate.warehousemanagement.ui.stocktransfernotification.StockTransferNotification"
+        android:label="@string/menu_stock_transfer_notification"
+        tools:layout="@layout/stock_transfer_notification_fragment" />
+    <fragment
+        android:id="@+id/nav_accept_stock_transfer"
+        android:name="com.ssinfomate.warehousemanagement.ui.acceptstocktransferList.AcceptStockTransferList"
+        android:label="@string/menu_accept_stock_transfer_list"
+        tools:layout="@layout/accept_stock_transfer_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.ssinfomate.warehousemanagement.ui.setting.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_change_company"
+        android:name="com.ssinfomate.warehousemanagement.ui.company.CompanyFragment"
+        android:label="@string/menu_change_company"
+        tools:layout="@layout/fragment_company" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.ssinfomate.warehousemanagement.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+
+    <fragment
+        android:id="@+id/nav_Login"
+        android:name="com.ssinfomate.warehousemanagement.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_nav_Login_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ssinfomate.warehousemanagement.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_stock_correction"
+            app:destination="@id/nav_stock_correction"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_nav_home_to_nav_stock_transfer"
+            app:destination="@id/nav_stock_transfer"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_check_stock"
+            app:destination="@id/nav_check_stock"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_check_stock_and"
+            app:destination="@id/nav_check_stock_and"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_purchase_order"
+            app:destination="@id/nav_purchase_order"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_manage_grn"
+            app:destination="@id/nav_manage_grn"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_print_price_tag"
+            app:destination="@id/nav_print_price_tag"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_home_to_nav_print_price_tag_and"
+            app:destination="@id/nav_print_price_tag_and"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_reduce_barcode"
+            app:destination="@id/nav_reduce_barcode"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_general"
+            app:destination="@id/nav_general"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_home_to_nav_general_and"
+            app:destination="@id/nav_general_and"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_home_to_nav_setting"
+            app:destination="@id/nav_setting" />
+
+
+    </fragment>
+
+    <!--Stock Correction Fragment-->
+    <fragment
+        android:id="@+id/nav_stock_correction"
+        android:name="com.ssinfomate.warehousemanagement.ui.stockcorrection.StockCorrectionFragment"
+        android:label="@string/menu_stock_correction"
+        tools:layout="@layout/stock_correction_fragment" >
+
+
+        <action
+            android:id="@+id/action_nav_stock_correction_to_nav_save_stock_correction"
+            app:destination="@id/nav_save_stock_correction" />
+
+        <action
+            android:id="@+id/action_nav_stock_correction_to_nav_save_stock_correction_and"
+            app:destination="@id/nav_save_stock_correction_and" />
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/nav_create_stock_correction"-->
+<!--        android:name="com.example.warehousemanegment.ui.stockcorrection.CreateStockCorrectionFragment"-->
+<!--        android:label="@string/menu_create_stock_correction"-->
+<!--        tools:layout="@layout/create_stock_correction_fragment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_nav_create_stock_correction_to_nav_stock_correction"-->
+<!--            app:destination="@id/nav_stock_correction"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"/>-->
+<!--        <action-->
+<!--            android:id="@+id/action_nav_create_stock_correction_to_nav_save_stock_correction2"-->
+<!--            app:destination="@id/nav_save_stock_correction"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"/>-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/nav_pick_held_stock_correction"-->
+<!--        android:name="com.example.warehousemanegment.ui.stockcorrection.PickHeldStockCorrectionFragment"-->
+<!--        android:label="@string/menu_pick_held_stock_correction"-->
+<!--        tools:layout="@layout/pick_held_stock_correction_fragment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_nav_pick_held_stock_correction_to_nav_stock_correction"-->
+<!--            app:destination="@id/nav_stock_correction"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"/>-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/nav_save_stock_correction"
+        android:name="com.ssinfomate.warehousemanagement.ui.stockcorrection.SaveStockCorrectionFragment"
+        android:label="@string/menu_save_stock_correction"
+        tools:layout="@layout/save_stock_correction_fragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_save_stock_correction_and"
+        android:name="com.ssinfomate.warehousemanagement.ui.stockcorrection.SaveStockCorrectionFragmentAnd"
+        android:label="@string/menu_save_stock_correction"
+        tools:layout="@layout/save_stock_correction_fragment" >
+
+    </fragment>
+
+    <!--Stock Transfer Fragment-->
+    <fragment
+        android:id="@+id/nav_stock_transfer"
+        android:name="com.ssinfomate.warehousemanagement.ui.stocktransfer.StockTransferFragment"
+        android:label="@string/menu_stock_transfer"
+        tools:layout="@layout/stock_transfer_fragment" >
+        <action
+            android:id="@+id/action_nav_stock_transfer_to_nav_create_stock_transfer"
+            app:destination="@id/nav_create_stock_transfer"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_stock_transfer_to_nav_pick_held_stock_transfer"
+            app:destination="@id/nav_pick_held_stock_transfer"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_stock_transfer_to_nav_save_stock_transfer"
+            app:destination="@id/nav_save_stock_transfer" />
+        <action
+            android:id="@+id/action_nav_stock_transfer_to_nav_save_stock_transfer_and"
+            app:destination="@id/nav_save_stock_transfer_and" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_create_stock_transfer"
+        android:name="com.ssinfomate.warehousemanagement.ui.stocktransfer.CreateStockTransferFragment"
+        android:label="@string/menu_create_stock_transfer"
+        tools:layout="@layout/create_stock_transfer_fragment" >
+        <action
+            android:id="@+id/action_nav_create_stock_transfer_to_nav_stock_transfer"
+            app:destination="@id/nav_stock_transfer"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_create_stock_transfer_to_nav_save_stock_transfer"
+            app:destination="@id/nav_save_stock_transfer" />
+        <action
+            android:id="@+id/action_nav_create_stock_transfer_to_nav_save_stock_transfer_and"
+            app:destination="@id/nav_save_stock_transfer_and" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pick_held_stock_transfer"
+        android:name="com.ssinfomate.warehousemanagement.ui.stocktransfer.PickHeldStockTransferFragment"
+        android:label="@string/menu_pick_held_stock_transfer"
+        tools:layout="@layout/pick_held_stock_transfer_fragment" >
+        <action
+            android:id="@+id/action_nav_pick_held_stock_transfer_to_nav_stock_transfer"
+            app:destination="@id/nav_stock_transfer" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_save_stock_transfer"
+        android:name="com.ssinfomate.warehousemanagement.ui.stocktransfer.SaveStockTransferFragment"
+        android:label="@string/menu_save_stock_transfer"
+        tools:layout="@layout/save_stock_transfer_fragment">
+
+        <action
+            android:id="@+id/action_nav_save_stock_transfer_to_nav_create_stock_transfer"
+            app:destination="@id/nav_create_stock_transfer" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_save_stock_transfer_and"
+        android:name="com.ssinfomate.warehousemanagement.ui.stocktransfer.SaveStockTransferFragmentAnd"
+        android:label="@string/menu_save_stock_transfer"
+        tools:layout="@layout/save_stock_transfer_fragment">
+
+        <action
+            android:id="@+id/action_nav_save_stock_transfer_to_nav_create_stock_transfer"
+            app:destination="@id/nav_create_stock_transfer" />
+    </fragment>
+
+<!--Check Stock Fragment-->
+    <fragment
+        android:id="@+id/nav_check_stock"
+        android:name="com.ssinfomate.warehousemanagement.ui.checkstock.CheckStockFragment"
+        android:label="@string/menu_check_stock"
+        tools:layout="@layout/check_stock_fragment" >
+        <action
+            android:id="@+id/action_nav_check_stock_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_check_stock_and"
+        android:name="com.ssinfomate.warehousemanagement.ui.checkstock.CheckStockFragmentAnd"
+        android:label="@string/menu_check_stock"
+        tools:layout="@layout/check_stock_fragment" >
+        <action
+            android:id="@+id/action_nav_check_stock_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+<!--Purchase Order Fragment-->
+    <fragment
+        android:id="@+id/nav_purchase_order"
+        android:name="com.ssinfomate.warehousemanagement.ui.purchaseorder.PurchaseOrderFragment"
+        android:label="@string/menu_purchase_order"
+        tools:layout="@layout/purchase_order_fragment" >
+        <action
+            android:id="@+id/action_nav_purchase_order_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_purchase_order_to_nav_save_purchase_order"
+            app:destination="@id/nav_save_purchase_order" />
+        <action
+            android:id="@+id/action_nav_purchase_order_to_nav_save_purchase_order_and"
+            app:destination="@id/nav_save_purchase_order_and" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_save_purchase_order"
+        android:name="com.ssinfomate.warehousemanagement.ui.purchaseorder.SavePurchaseOrderFragment"
+        android:label="@string/menu_save_purchase_order"
+        tools:layout="@layout/save_purchase_order_fragment">
+
+        <action
+            android:id="@+id/action_nav_save_purchase_order_to_nav_purchase_order"
+            app:destination="@id/nav_purchase_order" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_save_purchase_order_and"
+        android:name="com.ssinfomate.warehousemanagement.ui.purchaseorder.SavePurchaseOrderFragmentAnd"
+        android:label="@string/menu_save_purchase_order"
+        tools:layout="@layout/save_purchase_order_fragment">
+
+        <action
+            android:id="@+id/action_nav_save_purchase_order_to_nav_purchase_order"
+            app:destination="@id/nav_purchase_order" />
+
+    </fragment>
+
+<!--  GRN Fragment  -->
+    <fragment
+        android:id="@+id/nav_manage_grn"
+        android:name="com.ssinfomate.warehousemanagement.ui.grn.ManageGrnFragment"
+        android:label="@string/menu_manage_grn"
+        tools:layout="@layout/manage_grn_fragment" >
+        <action
+            android:id="@+id/action_nav_manage_grn_to_nav_create_grn"
+            app:destination="@id/nav_create_grn"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_manage_grn_to_nav_pick_held_grn"
+            app:destination="@id/nav_pick_held_grn"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_manage_grn_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_manage_grn_to_nav_save_grn"
+            app:destination="@id/nav_save_grn" />
+        <action
+            android:id="@+id/action_nav_manage_grn_to_nav_save_grn_and"
+            app:destination="@id/nav_save_grn_and" />
+        <action
+            android:id="@+id/action_nav_manage_grn_to_saveWithPurNoFragment"
+            app:destination="@id/saveWithPurNoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_create_grn"
+        android:name="com.ssinfomate.warehousemanagement.ui.grn.ManageGrnFragment"
+        android:label="@string/menu_create_grn"
+        tools:layout="@layout/create_grn_fragment" >
+        <action
+            android:id="@+id/action_nav_create_grn_to_nav_manage_grn"
+            app:destination="@id/nav_manage_grn" />
+        <action
+            android:id="@+id/action_nav_create_grn_to_nav_save_grn"
+            app:destination="@id/nav_save_grn" />
+    </fragment>
+    <fragment
+    android:id="@+id/nav_pick_held_grn"
+    android:name="com.ssinfomate.warehousemanagement.ui.grn.PickHeldGrnFragment"
+    android:label="@string/menu_pick_held_grn"
+    tools:layout="@layout/pick_held_grn_fragment" >
+        <action
+            android:id="@+id/action_nav_pick_held_grn_to_nav_manage_grn"
+            app:destination="@id/nav_manage_grn"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_save_grn"
+        android:name="com.ssinfomate.warehousemanagement.ui.grn.SaveGrnFragment"
+        android:label="@string/menu_save_grn"
+        tools:layout="@layout/save_grn_fragment">
+
+        <action
+            android:id="@+id/action_nav_save_grn_to_nav_create_grn"
+            app:destination="@id/nav_create_grn" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_save_grn_and"
+        android:name="com.ssinfomate.warehousemanagement.ui.grn.SaveGrnFragmentAnd"
+        android:label="@string/menu_save_grn"
+        tools:layout="@layout/save_grn_fragment">
+
+        <action
+            android:id="@+id/action_nav_save_grn_and_to_nav_create_grn"
+            app:destination="@id/nav_create_grn" />
+    </fragment>
+
+    <!--Print Price Tag Fragment-->
+    <fragment
+        android:id="@+id/nav_print_price_tag"
+        android:name="com.ssinfomate.warehousemanagement.ui.printpricetag.PrintTagFragment"
+        android:label="@string/menu_print_price_tag"
+        tools:layout="@layout/print_tag_fragment" >
+        <action
+            android:id="@+id/action_nav_print_price_tag_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_print_price_tag_and"
+        android:name="com.ssinfomate.warehousemanagement.ui.printpricetag.PrintTagFragmentAnd"
+        android:label="@string/menu_print_price_tag"
+        tools:layout="@layout/print_tag_fragment" >
+        <action
+            android:id="@+id/action_nav_print_price_tag_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <!--Reduce Barcode Fragment-->
+    <fragment
+        android:id="@+id/nav_reduce_barcode"
+        android:name="com.ssinfomate.warehousemanagement.ui.reducedbarcode.ReduceBarcodeFragment"
+        android:label="@string/menu_reduce_barcode"
+        tools:layout="@layout/reduce_barcode_fragment" >
+        <action
+            android:id="@+id/action_nav_reduce_barcode_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_nav_reduce_barcode_to_saveReducedBarcodeFragment"
+            app:destination="@id/saveReducedBarcodeFragment" />
+        <action
+            android:id="@+id/action_nav_reduce_barcode_to_saveReducedBarcodeFragment_and"
+            app:destination="@id/saveReducedBarcodeFragmentAnd" />
+    </fragment>
+
+    <!--General Fragment-->
+    <fragment
+        android:id="@+id/nav_general"
+        android:name="com.ssinfomate.warehousemanagement.ui.general.GeneralFragment"
+        android:label="@string/menu_general"
+        tools:layout="@layout/fragment_general" >
+        <action
+            android:id="@+id/action_nav_general_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_general_and"
+        android:name="com.ssinfomate.warehousemanagement.ui.general.GeneralFragmentAnd"
+        android:label="@string/menu_general"
+        tools:layout="@layout/fragment_general" >
+        <action
+            android:id="@+id/action_nav_general_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/saveWithPurNoFragment"
+        android:name="com.ssinfomate.warehousemanagement.ui.grn.SaveWithPurNoFragment"
+        android:label="@string/menu_save_grn_with_pur_order"
+        tools:layout="@layout/save_with_pur_no_fragment" />
+    <fragment
+        android:id="@+id/saveReducedBarcodeFragment"
+        android:name="com.ssinfomate.warehousemanagement.ui.reducedbarcode.SaveReducedBarcodeFragment"
+        android:label="@string/menu_save_reduce_barcode"
+        tools:layout="@layout/save_reduced_barcode_fragment" >
+        <action
+            android:id="@+id/action_saveReducedBarcodeFragment_to_printReducedBarcodeFragment"
+            app:destination="@id/printReducedBarcodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveReducedBarcodeFragmentAnd"
+        android:name="com.ssinfomate.warehousemanagement.ui.reducedbarcode.SaveReducedBarcodeFragmentAnd"
+        android:label="@string/menu_save_reduce_barcode"
+        tools:layout="@layout/save_reduced_barcode_fragment" >
+        <action
+            android:id="@+id/action_saveReducedBarcodeFragment_to_printReducedBarcodeFragment"
+            app:destination="@id/printReducedBarcodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/printReducedBarcodeFragment"
+        android:name="com.ssinfomate.warehousemanagement.ui.reducedbarcode.printrecucedbarcode.PrintReducedBarcodeFragment"
+        android:label="print_reduced_barcode_fragment"
+        tools:layout="@layout/print_reduced_barcode_fragment" >
+        <action
+            android:id="@+id/action_printReducedBarcodeFragment_to_saveReducedBarcodeFragment"
+            app:destination="@id/saveReducedBarcodeFragment" />
+        <action
+            android:id="@+id/action_printReducedBarcodeFragment_to_saveReducedBarcodeFragmentAnd"
+            app:destination="@id/saveReducedBarcodeFragmentAnd" />
+        <action
+            android:id="@+id/action_printReducedBarcodeFragment_to_nav_reduce_barcode"
+            app:destination="@id/nav_reduce_barcode" />
+        <!--        <action-->
+<!--            android:id="@+id/action_printReducedBarcodeFragment_to_saveReducedBarcodeFragmentAnd"-->
+<!--            app:destination="@id/saveReducedBarcodeFragmentAnd" />-->
+    </fragment>
+
+</navigation>

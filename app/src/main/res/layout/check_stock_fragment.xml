@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    tools:context="com.ssinfomate.warehousemanagement.ui.checkstock.CheckStockFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewComponent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="50dp"
+        android:text="Warehouse"
+       />
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/EditTextViewComponent"
+        android:id="@+id/text_check_stock_warehouse_select"
+        android:layout_width="match_parent"
+        android:text=""
+
+       />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_business_location"
+        android:layout_width="0dp"
+        style="@style/TextViewComponent"
+        android:layout_weight="0.80"
+        android:text="Barcode"
+      />
+        <!--androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_check_stock_camera"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.20"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:drawableRight="@drawable/ic_barcode"/-->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/EditTextViewComponent"
+            android:id="@+id/edit_check_stock_barcode"
+            android:layout_width="0dp"
+            android:text=""
+            android:layout_weight="0.80"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_check_stock_search"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.20"
+            android:text="OK"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:id="@+id/rv_item_check_stock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:listitem="@layout/row_check_stock_list"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

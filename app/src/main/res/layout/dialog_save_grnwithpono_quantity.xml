@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:gravity="center_horizontal"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:text="Enter Item Quantity"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dialog_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:padding="4dp"
+        android:inputType="numberDecimal"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:padding="4dp"
+        android:gravity="center_vertical"
+        android:text="Quantity"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/dialog_item_quantity"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="30dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="number"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:paddingLeft="4dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_button_plus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:text="+"
+            android:background="@drawable/button_plus_background"
+            android:textColor="#2E5129"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_button_minus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:text="-"
+            android:background="@drawable/button_minus_background"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_button_update"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="Update"
+            android:background="#2E5129"
+            android:textColor="@color/white"
+            android:layout_margin="4dp"
+            android:layout_height="30dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_button_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="Calcel"
+            android:background="#ff0000"
+            android:layout_margin="4dp"
+            android:textColor="@color/white"
+            android:layout_height="30dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</LinearLayout>
+

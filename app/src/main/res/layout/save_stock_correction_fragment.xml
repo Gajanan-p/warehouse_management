@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    tools:context="com.ssinfomate.warehousemanagement.ui.stockcorrection.SaveStockCorrectionFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_adjustment_type"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Select Adjustment Type"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/sky_blue"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/txt_stock_correction_frg_save_stock_correction"
+        style="@style/TextViewComponent"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/text_adjustment_type"
+        android:text="Scan Barcode"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container_layout"
+        android:layout_below="@id/txt_stock_correction_frg_save_stock_correction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_save_stock_correction_barcode"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            style="@style/EditTextViewComponent"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_save_stock_correction_barcode_ok"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_background"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/container_layout"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/rv_item_stock_correction_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/row_stock_correction_list"/>
+
+    <Button
+        android:id="@+id/save_stock_correction_save"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_marginBottom="70dp"
+        android:drawableRight="@drawable/ic_save_24" />
+
+</RelativeLayout>

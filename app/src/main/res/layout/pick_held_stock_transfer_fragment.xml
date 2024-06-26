@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context="com.ssinfomate.warehousemanagement.ui.stocktransfer.PickHeldStockTransferFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+       style="@style/HomeSaversTextViewCompact"
+        android:text="Home Savers"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+       style="@style/TextViewComponent"
+        android:text="Warehouse"
+       />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_pick_held_stock_transfer_business_location"
+            style="@style/EditTextViewComponent"
+            android:layout_width="0dp"
+            android:layout_weight="0.85"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_pick_held_stock_transfer_clear"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.15"
+            android:layout_marginLeft="10dp"
+            android:text="Clear"
+            android:visibility="gone"
+            android:background="@drawable/button_background"
+            android:textColor="#fff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_show_held_stock_transfer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Show Held Stock Transfer List"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/id_recycle_view_pick_held_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row_pick_held_list"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

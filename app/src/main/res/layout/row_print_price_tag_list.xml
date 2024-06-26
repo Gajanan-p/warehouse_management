@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:elevation="4dp"
+    android:background="@drawable/row_background"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/row_print_price_tag_item_name"
+        android:layout_width="wrap_content"
+        android:text="Product Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="18sp"
+        android:id="@+id/row_print_price_tag_barcode"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:textColor="@color/purple_200"
+        android:layout_height="wrap_content"/>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_was_price"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_box_was_sale_rate"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Was Sale Price"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_print_price_tag_was_item_price"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_box_now_sale_rate"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Sale Price"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_print_price_tag_item_price"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_deposit"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_box_deposit_rate"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Deposit Price"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_print_deposit_price"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Product Code"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_print_price_tag_item_code"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:hint=" "
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Case Size"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_print_price_tag_case_size"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Vat Code"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_print_price_tag_vat_code"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Department Name"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_print_price_tag_department_name"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Department Code"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_print_price_tag_department_code"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Product Status"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_print_price_tag_product_status"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Current Date"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_print_price_tag_current_date"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:inputType="date"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

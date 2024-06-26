@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context="com.ssinfomate.warehousemanagement.ui.purchaseorder.PurchaseOrderFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+       style="@style/HomeSaversTextViewCompact"
+        android:text="Home Savers"
+      />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+       style="@style/TextViewComponent"
+        android:text="Sourse Business Location"
+       />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_purchase_order_source_business_location"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewComponent"/>
+
+    <!--androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewComponent"
+        android:text="Deliver To Business Location"
+       />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_purchase_order_deliver_to_business_location"
+        android:layout_width="match_parent"
+        style="@style/EditTextViewComponent"/-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewComponent"
+        android:text="Supplier"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_purchase_order_supplier"
+        android:layout_width="match_parent"
+        android:hint="Select Supplier"
+       style="@style/EditTextViewComponent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_btn_purchase_order_save_purchase_order"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Start Po"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

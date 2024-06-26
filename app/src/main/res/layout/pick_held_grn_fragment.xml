@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context="com.ssinfomate.warehousemanagement.ui.grn.PickHeldGrnFragment">
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/HomeSaversTextViewCompact"
+        android:text="Home Savers"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_business_location"
+       style="@style/TextViewComponent"
+        android:text="Warehouse"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_held_grn_business_location"
+            style="@style/EditTextViewComponent"
+            android:layout_width="0dp"
+            android:layout_weight="0.85"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_pick_held_grn_clear"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.15"
+            android:layout_marginLeft="5dp"
+            android:text="Clear"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:background="@drawable/button_background"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_held_grn_show_held_list"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:text="Show Held GRN List"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_recycle_view_held_Grn_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        tools:listitem="@layout/row_held_grn_list">
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.appcompat.widget.LinearLayoutCompat>

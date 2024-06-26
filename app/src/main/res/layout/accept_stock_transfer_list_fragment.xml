@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ssinfomate.warehousemanagement.ui.acceptstocktransferList.AcceptStockTransferList">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_accept_stock_update_save"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Submit"
+        android:layout_gravity="right"
+        android:background="@drawable/button_background"
+        android:layout_margin="4dp"
+        android:textColor="@color/white"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_recycle_view_accept_stock_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/row_stock_transfer_notification_list"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

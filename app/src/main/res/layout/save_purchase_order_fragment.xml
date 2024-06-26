@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:weightSum="1"
+android:layout_margin="5dp"
+tools:context="com.ssinfomate.warehousemanagement.ui.purchaseorder.SavePurchaseOrderFragment">
+
+<androidx.appcompat.widget.AppCompatTextView
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:id="@+id/id_scan_barcode"
+    style="@style/TextViewComponent"
+    android:text="Scan Barcode"
+    />
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_below="@+id/id_scan_barcode"
+    android:id="@+id/id_container_barcode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    >
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_save_stock_transfer_barcode"
+        android:layout_width="0dp"
+        android:layout_weight="0.70"
+        style="@style/EditTextViewComponent"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_stock_button_ok"
+        android:layout_width="0dp"
+        android:layout_weight="0.20"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:background="@drawable/button_background"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_below="@+id/id_container_barcode"
+    android:id="@+id/recycler_save_stock_transfer"
+    android:layout_width="match_parent"
+    tools:listitem="@layout/row_save_stock_transfer_list"
+    android:layout_height="wrap_content">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+<Button
+    android:id="@+id/save_purchase_order"
+    android:layout_width="50dp"
+    android:layout_gravity="right"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="160dp"
+    android:drawableRight="@drawable/ic_save_24"
+    android:layout_height="50dp"/>
+</RelativeLayout>

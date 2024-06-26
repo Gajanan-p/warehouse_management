@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/HomeSaversTextViewCompact"
+        android:text="Home Savers"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewComponent"
+        android:text="Warehouse"
+       />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_pick_held_stock_correction_business_location"
+            style="@style/EditTextViewComponent"
+            android:layout_width="0dp"
+            android:layout_weight="0.85"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_pick_held_stock_correction_clear"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.15"
+            android:text="Clear"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_background"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_show_pick_held_stock_correction_list"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:text="Show Held Stock Correction List"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/EditTextViewComponent"
+        android:id="@+id/text_select_stock_correction_reason"
+        android:layout_width="match_parent"
+        android:text="Select Stock Correction Reason"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/purple_200"
+        android:gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_recycle_view_held_stock_correction_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/row_held_stock_correction_list">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

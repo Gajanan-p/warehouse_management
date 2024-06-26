@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:layout_margin="4dp"
+    android:elevation="1dp"
+    android:background="@drawable/row_background"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/row_save_reduced_barcode_item_name"
+        android:layout_width="wrap_content"
+        android:text="Product Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:text="Measuring Units:-"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:text="Total Quantity"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_save_reduced_barcode_item_unit"
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:text=""
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_save_reduced_barcode_total_qty"
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:text=""
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.40"
+            android:text="Sale Rate"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.60"
+            android:text="Sale Rate Before Tax"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_save_reduced_barcode_sale_rate"
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:text=""
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_save_reduced_barcode_sale_rate_before_tax"
+            android:layout_width="0dp"
+            android:layout_weight="0.55"
+            android:text=""
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.40"
+            android:text="New Sale Rate"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.60"
+            android:text="New SaleRateBeforeTax"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_save_reduced_barcode_new_sale_rate"
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_save_reduced_barcode_new_sale_rate_before_tax"
+            android:layout_width="0dp"
+            android:layout_weight="0.55"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+     <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="Numbers Of Stickers:-"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_save_reduced_barcode_no_of_stickers"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="Remark:-"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_save_reduced_barcode_remark"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:hint="            Select Remark"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/row_save_reduced_barcode_button_update"
+            android:layout_width="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="0.4"
+            android:text="Update"
+            android:background="#0197F6"
+            android:textColor="#FFFFFF"
+            android:layout_height="30dp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

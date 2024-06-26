@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/row_background"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="From Warehouse:-"
+        android:layout_weight="0.35"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_from_warehouse_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_weight="0.65"
+        android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="To Warehouse:-"
+        android:layout_weight="0.35"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_to_warehouse_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_weight="0.65"
+        android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Document no:-"
+            android:layout_weight="0.35"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_document_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_weight="0.65"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Item Name:-"
+            android:layout_weight="0.35"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_from_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:hint="test name"
+            android:layout_weight="0.65"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:weightSum="1"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Document no:-"-->
+<!--            android:layout_weight="0.35"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/text_document_number"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="14sp"-->
+<!--            android:padding="2dp"-->
+<!--            android:textColor="#000"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_weight="0.65"/>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Scan Quantity:-"
+        android:layout_weight="0.35"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_scan_qty_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_weight="0.64"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Accepted Quantity:-"
+            android:layout_weight="0.35"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_transfer_qty_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_weight="0.64"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Created by:-"
+            android:layout_weight="0.35"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_created_by"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_weight="0.64"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Created Date:-"
+            android:layout_weight="0.35"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_created_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_weight="0.64"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/row_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.4"
+                android:gravity="left|center"
+                android:text="Created Date" />
+
+            <TextView
+                android:id="@+id/row_text_general_created_date"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.6"
+                android:gravity="left|center"
+                android:textColor="@color/purple_200"
+                android:text="General List" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.4"
+                android:gravity="left|center"
+                android:padding="2dp"
+                android:text="Product Name" />
+
+            <TextView
+                android:id="@+id/row_text_general_product_name"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.6"
+                android:gravity="left|center"
+                android:padding="2dp"
+                android:text="General List" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:layout_weight="0.40">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="0.4"
+                android:gravity="left|center"
+                android:text="System Quantity" />
+
+            <TextView
+                android:id="@+id/row_text_general_system_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="0.6"
+                android:gravity="left|center"
+                android:text="System Quantity"
+                android:textColor="@color/purple_200"
+                />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:layout_weight="0.50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="0.4"
+                android:gravity="left|center"
+                android:text="Unit" />
+
+            <TextView
+                android:id="@+id/row_text_general_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="0.6"
+                android:gravity="left|center"
+                android:hint="Unit"
+                android:textColor="@color/purple_200"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:minHeight="40dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="0.4"
+                android:gravity="left|center"
+                android:text="Remark 1" />
+
+            <TextView
+                android:id="@+id/row_text_general_remark_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="0.6"
+                android:gravity="left|center"
+                android:hint="Remark 1"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:minHeight="40dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="0.4"
+                android:gravity="left|center"
+                android:text="Remark 2" />
+
+            <TextView
+                android:id="@+id/row_text_general_remark_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="0.6"
+                android:gravity="left|center"
+                android:hint="Remark 2"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:weightSum="1.0">
+
+            <Button
+                android:id="@+id/row_button_general_update"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Update"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/row_button_general_delete"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Delete"
+                android:textColor="@color/white"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

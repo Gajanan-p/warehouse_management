@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.ssinfomate.warehousemanagement.ui.setting.SettingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:layout_weight="1"
+        android:layout_margin="1dp">
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:weightSum="1">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:orientation="vertical"
+               android:background="@drawable/row_background"
+               android:layout_weight="0.20"
+               android:padding="4dp"
+               android:layout_marginTop="1dp">
+               <ImageView
+                   android:id="@+id/image_icon"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   android:layout_width="60dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_manufacturer"
+                   />
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/txt_setting"
+                   android:baselineAlignBottom="true"
+                   android:layout_alignBaseline="@+id/image_icon"
+                   android:layout_toRightOf="@+id/image_icon"
+                   android:layout_toEndOf="@+id/image_icon"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Manufacture"
+                   android:textSize="18dp"/>
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_below="@+id/txt_setting"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="VRS Software"
+                   android:baselineAlignBottom="true"
+                   android:layout_alignBaseline="@+id/image_icon"
+                   android:layout_toRightOf="@+id/image_icon"
+                   android:layout_toEndOf="@+id/image_icon"
+                   android:textSize="16dp"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:background="@drawable/row_background"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="0.20"
+               android:padding="4dp"
+               android:layout_marginTop="0dp">
+               <ImageView
+                   android:id="@+id/image_app_icon"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   android:layout_width="60dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_apps"
+                   />
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/txt_app"
+                   android:baselineAlignBottom="true"
+                   android:layout_alignBaseline="@+id/image_app_icon"
+                   android:layout_toRightOf="@+id/image_app_icon"
+                   android:layout_toEndOf="@+id/image_app_icon"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="App"
+                   android:textSize="18dp"/>
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_below="@+id/txt_app"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Warehouse"
+                   android:baselineAlignBottom="true"
+                   android:layout_alignBaseline="@+id/image_app_icon"
+                   android:layout_toRightOf="@+id/image_app_icon"
+                   android:layout_toEndOf="@+id/image_app_icon"
+                   android:textSize="16dp"
+                   />
+           </RelativeLayout>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:background="@drawable/row_background"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="0.20"
+               android:layout_marginTop="0dp"
+               android:padding="5dp">
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Version"
+                   android:textSize="16dp"/>
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/text_setting_version"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="2.0"/>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:background="@drawable/row_background"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_marginTop="0dp"
+               android:layout_weight="0.20"
+               android:padding="5dp">
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Device Id"
+                   android:textSize="16dp"/>
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/text_setting_device_id"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Device ID"/>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:background="@drawable/row_background"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="0.20"
+               android:layout_marginTop="0dp"
+               android:padding="5dp">
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="License Key"
+                   android:textSize="16dp"/>
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/text_setting_license_key"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Dummy"/>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:background="@drawable/row_background"
+               android:id="@+id/setting_select_server_url"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="0.20"
+               android:layout_marginTop="0dp"
+               android:padding="5dp">
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Server URL"
+                   android:textSize="16dp"/>
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/setting_server_url"
+                   android:text="Dummy"/>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:background="@drawable/row_background"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_marginTop="0dp"
+               android:layout_weight="0.20"
+               android:padding="5dp">
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Contact Us"
+                   android:textSize="16dp"/>
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/text_setting_contact_us"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/setting_contact_hyperlink"/>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:background="@drawable/row_background"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="0.20"
+               android:layout_marginTop="0dp"
+               android:padding="5dp">
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="End User License Agreement"
+                   android:textSize="16dp"/>
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/text_setting_user_agreement"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Click here..."/>
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Print Setting"
+                   android:background="@color/activity_background"
+                   android:textSize="18dp"
+                   android:layout_marginTop="10dp"/>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+           <!--RelativeLayout
+               android:background="@drawable/row_background"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="0.20"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp">
+
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:button="@null"
+                   android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                   android:text="Print Document on Server" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:background="@drawable/row_background"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="0.20"
+               android:layout_marginTop="0dp"
+               android:padding="5dp">
+
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:button="@null"
+                   android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                   android:text="Open Document in Pdf Viewer" />
+           </RelativeLayout-->
+
+           <RelativeLayout
+               android:background="@drawable/row_background"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="0.20"
+               android:layout_marginTop="0dp"
+               android:padding="5dp">
+               <CheckBox
+                   android:text="Zebra Printer"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:button="@null"
+                   android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+           </RelativeLayout>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:background="@drawable/row_background"
+               android:id="@+id/setting_select_printer_mac_address"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="0.20"
+               android:layout_marginTop="0dp"
+               android:padding="5dp">
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Zebra Printer Mac Address"
+                   android:textSize="18dp"/>
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/setting_printer_mac_address"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="16dp"
+                   android:text=" . . ."/>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
